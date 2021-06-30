@@ -1,4 +1,4 @@
-@StaffTest
+#@StaffTest
 Feature: Успешная отправка заявки отгула в течении дня
   Scenario: Авторизоваться и отправить заявку отгула на весь день
     Given Open browser OtgulPartDay

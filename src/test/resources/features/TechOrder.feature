@@ -1,4 +1,4 @@
-@StaffTest
+#@StaffTest
 Feature: Успешная отправка технической заявки
   Scenario: Авторизоваться и отправить техническую заявку
     Given Open browser techorder

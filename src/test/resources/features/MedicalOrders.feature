@@ -1,4 +1,4 @@
-@StaffTest
+#@StaffTest
 Feature: Успешная отправка заявки с типом "больничный"
   Scenario: Авторизоваться и отправить заявку с типом "больничный"
     Given Open browser MedicalOrders

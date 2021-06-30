@@ -1,4 +1,4 @@
-@StaffTest
+#@StaffTest
   Feature: Поменять имя и фамилию у сотрудника, сохраниться и выйти
     Scenario: Авторизироваться, изменить и сохранить
       Given Open browser editusername
