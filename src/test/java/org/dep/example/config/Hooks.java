@@ -19,7 +19,7 @@ public class Hooks {
     System.out.println("InitScenario");
     WebDriverManager.resetWebDriver();
     PageObjectManager.resetPageObjects();
-    System.out.println("end of initScenario");
+    System.out.println("Сценарий закончен");
     File directory = new File("./src");
     System.out.println(directory.getAbsolutePath());
   }
@@ -33,7 +33,7 @@ public class Hooks {
 
   @After()
   public void closeBrowser(Scenario scenario) {
-    System.out.println("klj");
+    System.out.println("Браузер закрыт");
     WebDriverManager.getWebDriver().close();
   }
 
