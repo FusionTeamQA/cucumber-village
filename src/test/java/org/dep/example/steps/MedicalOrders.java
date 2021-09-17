@@ -18,7 +18,6 @@ public class MedicalOrders extends Driver {
 
     @Given("^Open browser MedicalOrders$")
     public void open_browser_MedicalOrders() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "/Users/fusion_tech/Documents/test1/CucumberTest/src/test/resources/Driver/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);

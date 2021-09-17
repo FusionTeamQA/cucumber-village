@@ -16,7 +16,7 @@ public class WebDriverManager {
   }
 
   public static void resetWebDriver() {
-    System.setProperty("webdriver.chrome.driver", "/Users/fusion_tech/Documents/test1/CucumberTest/src/test/resources/Driver/chromedriver");
+    System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
     driver = new ChromeDriver();
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

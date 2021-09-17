@@ -18,7 +18,7 @@ public class Hooks {
   public void initScenario() {
     System.out.println("InitScenario");
     WebDriverManager.resetWebDriver();
-    PageObjectManager.resetPageObjects();
+//    PageObjectManager.resetPageObjects();
     System.out.println("Инициализация браузера - ОК");
     File directory = new File("./src");
     System.out.println(directory.getAbsolutePath());
