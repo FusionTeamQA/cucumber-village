@@ -1,4 +1,4 @@
-@BrincTest
+#@BrincTest
 Feature: Регистрация пользователя не успешная (Негатив тест)
   Scenario: Открыть сайт, получить ошибку при регистрации ввода почты и закрыть браузер
     Given OpenBrowser |SignUpNegative
