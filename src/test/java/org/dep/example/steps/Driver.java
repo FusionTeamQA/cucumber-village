@@ -16,7 +16,7 @@ public class Driver {
     Random random = new Random(); // добавление рандомных чисел
     int n = random.nextInt(1000) + 3; // +3 в конец
 
-    public static final String URL = "https://dev.brinc.de/";
+    public static final String URL = "https://user:123@dev.brinc.de";
     public static final String USER_admin = "fusion.team.llc@gmail.com";
     public static final String PASSWORD_admin = "AAAqqq111";
     public static final String user_log = "user";

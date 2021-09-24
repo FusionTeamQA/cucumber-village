@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 //        plugin = {"com.qmetry.qaf.automation.cucumber.QAFCucumberPlugin"},
         plugin = {"pretty","html:target/HtmlReports"},
-        tags = "@StaffTest",
+        tags = "@BrincTest",
         features = {"src/test/resources/features"}
 )
 public class TestRunner extends AbstractTestNGCucumberTests {

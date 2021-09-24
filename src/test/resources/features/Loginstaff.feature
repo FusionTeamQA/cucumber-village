@@ -1,4 +1,3 @@
-@StaffTest
 Feature: Успешная авторизация на деве
   Scenario: Открыть страницу и авторизироваться
     Given Open browser
