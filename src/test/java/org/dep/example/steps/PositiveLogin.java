@@ -70,13 +70,13 @@ public class PositiveLogin extends Driver {
 
     @When("Enter Benutzername \\(E-Mail) |LoginPositive")
     public void enter_Benutzername_E_Mail_LoginPositive() {
-        driver.findElement(By.id("auth_modal_email")).sendKeys("qa@qa.qa");
+        driver.findElement(By.id("auth_modal_email")).sendKeys(USER_admin);
         System.out.println("Введена почта qa@qa.qa");
     }
 
     @When("Enter Passwort |LoginPositive")
     public void enter_Passwort_LoginPositive() throws InterruptedException {
-        driver.findElement(By.id("auth_modal_password")).sendKeys("12345678");
+        driver.findElement(By.id("auth_modal_password")).sendKeys(PASSWORD_admin);
         System.out.println("Введен 12345678");
     }
 
