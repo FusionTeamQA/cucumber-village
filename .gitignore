@@ -1,8 +1,6 @@
 allure-report/
 allure-results/
 .idea/
-cucumber-test-staff.iml
-target/test-classes
-target/generated-test-sources
+.target/
 .gitignore
 
