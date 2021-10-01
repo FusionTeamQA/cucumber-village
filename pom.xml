@@ -28,6 +28,11 @@
     <dependencies>
         <dependency>
             <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-cucumber4-jvm</artifactId>
+            <version>2.13.3</version>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit5</artifactId>
             <version>2.13.1</version>
             <scope>test</scope>
@@ -124,34 +129,34 @@
                 </configuration>
             </plugin>
 
-            <!--      <plugin>-->
-            <!--        <groupId>org.apache.maven.plugins</groupId>-->
-            <!--        <artifactId>maven-surefire-plugin</artifactId>-->
-            <!--        <configuration>-->
-            <!--          <testFailureIgnore>true</testFailureIgnore>-->
-            <!--        </configuration>-->
-            <!--      </plugin>-->
-            <!--      <plugin>-->
-            <!--        <groupId>net.masterthought</groupId>-->
-            <!--        <artifactId>maven-cucumber-reporting</artifactId>-->
-            <!--        <version>5.0.0</version>-->
-            <!--        <executions>-->
-            <!--          <execution>-->
-            <!--            <id>execution</id>-->
-            <!--            <phase>verify</phase>-->
-            <!--            <goals>-->
-            <!--              <goal>generate</goal>-->
-            <!--            </goals>-->
-            <!--            <configuration>-->
-            <!--              <jsonFiles>-->
-            <!--                <param>**/*.json</param>-->
-            <!--              </jsonFiles>-->
-            <!--              <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>-->
-            <!--              <inputDirectory>${project.build.directory}/jsonReports</inputDirectory>-->
-            <!--            </configuration>-->
-            <!--          </execution>-->
-            <!--        </executions>-->
-            <!--      </plugin>-->
+<!--                  <plugin>-->
+<!--                    <groupId>org.apache.maven.plugins</groupId>-->
+<!--                    <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                    <configuration>-->
+<!--                      <testFailureIgnore>true</testFailureIgnore>-->
+<!--                    </configuration>-->
+<!--                  </plugin>-->
+<!--                  <plugin>-->
+<!--                    <groupId>net.masterthought</groupId>-->
+<!--                    <artifactId>maven-cucumber-reporting</artifactId>-->
+<!--                    <version>5.0.0</version>-->
+<!--                    <executions>-->
+<!--                      <execution>-->
+<!--                        <id>execution</id>-->
+<!--                        <phase>verify</phase>-->
+<!--                        <goals>-->
+<!--                          <goal>generate</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                          <jsonFiles>-->
+<!--                            <param>**/*.json</param>-->
+<!--                          </jsonFiles>-->
+<!--                          <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>-->
+<!--                          <inputDirectory>${project.build.directory}/jsonReports</inputDirectory>-->
+<!--                        </configuration>-->
+<!--                      </execution>-->
+<!--                    </executions>-->
+<!--                  </plugin>-->
         </plugins>
     </build>
 </project>

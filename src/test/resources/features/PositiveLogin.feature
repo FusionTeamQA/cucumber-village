@@ -1,4 +1,4 @@
-#@BrincTest
+@BrincTest
 Feature: Успешный логин
   Scenario: Открыть сайт, успешно авторизироваться
     Given OpenBrowser |LoginPositive

@@ -1,4 +1,4 @@
-#@BrincTest
+@BrincTest
 Feature: Регистрация пользователя успешная
   Scenario: Открыть сайт, зарегистрировать пользователя и закрыть браузер
     Given OpenBrowser |SignUp

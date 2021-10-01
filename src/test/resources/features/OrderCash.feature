@@ -1,4 +1,4 @@
-@BrincTest
+#@BrincTest
 Feature: Успешное создание заказа с наличной оплатой залогиненным пользователем
   Scenario: Открыть страницу дев, сделать заказ, оплатить наличными
     Given OpenBrowser |OrderCash

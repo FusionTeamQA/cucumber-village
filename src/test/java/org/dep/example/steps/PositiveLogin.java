@@ -88,7 +88,7 @@ public class PositiveLogin extends Driver {
     @Then("Account login successfully and browser closed |LoginPositive")
     public void account_login_successfully_and_browser_closed_LoginPositive() {
         String LoginString = driver.findElement(By.xpath("/html/body/eg-root/eg-header/div/eg-header-top/div/div/div/div[2]/div[2]/div[1]/eg-profile-dropdown/eg-dropdown/div[1]/div/span")).getText();
-        assertTrue(LoginString.contains("QAA"));
+        assertTrue(LoginString.contains("qq"));
         System.out.println("Логин соответствует почте");
         driver.close();
 
