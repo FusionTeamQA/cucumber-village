@@ -21,8 +21,8 @@ public class Driver {
     public static final String PASSWORD_admin = "12345678";
     public static final String user_log = "user";
     public static final String pass_log = "123";
+}
 
 //    Date date = new Date();
-    }
 
 
