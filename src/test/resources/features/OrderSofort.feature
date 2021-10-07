@@ -1,4 +1,4 @@
-@BrincTest
+#@BrincTest
 Feature: Успешное создание заказа с оплатой через Sofort залогиненным пользователем
   Scenario: Открыть страницу дев, сделать заказ, оплатить Sofort
     Given OpenBrowser |Sofort
