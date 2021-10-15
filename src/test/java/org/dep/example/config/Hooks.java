@@ -7,10 +7,15 @@ import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 
 import java.io.File;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class Hooks {
 

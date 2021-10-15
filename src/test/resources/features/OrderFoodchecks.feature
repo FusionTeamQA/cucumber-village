@@ -10,7 +10,6 @@ Feature: Успешное создание заказа с продовольс�
     And  Enter Benutzername (E-Mail) |Foodcheck
     And  Enter Passwort |Foodcheck
     And  Click botton Anmelden und weiter |Foodcheck
-    And  Click botton Quick finder|Foodcheck
     And  Select category American Diner im Cinecitta|Foodcheck
     And Choose the quantity of the product " Arizona Iced Tea Blueberry“ in the size of 5 pcs|Foodcheck
     And Add an item to the cart|Foodcheck

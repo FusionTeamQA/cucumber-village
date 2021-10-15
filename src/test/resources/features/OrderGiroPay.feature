@@ -1,4 +1,4 @@
-@BrincTest
+#@BrincTest
 Feature: Успешное создание заказа с оплатой через GiroPay залогиненным пользователем
   Scenario: Открыть страницу дев, сделать заказ, оплатить GiroPay
     Given OpenBrowser |GiroPay

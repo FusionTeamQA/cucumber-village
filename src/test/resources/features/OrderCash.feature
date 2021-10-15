@@ -10,7 +10,6 @@ Feature: Успешное создание заказа с наличной оп
     And  Enter Benutzername (E-Mail) |OrderCash
     And  Enter Passwort |OrderCash
     And  Click botton Anmelden und weiter |OrderCash
-    And  Click botton Quick finder|OrderCash
     And  Select category American Diner im Cinecitta|OrderCash
     And Choose the quantity of the product " Arizona Iced Tea Blueberry“ in the size of 5 pcs|OrderCash
     And Add an item to the cart|OrderCash

@@ -147,16 +147,17 @@ public class OrderFoodcheck extends Driver {
     @When("Click Continue|Foodcheck")
     public void click_Continue_Foodcheck() throws InterruptedException {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,400)");
-        Thread.sleep(1000);
+        js.executeScript("window.scrollBy(0,500)");
+        Thread.sleep(2000);
         Actions actions = new Actions(driver);
-        WebDriverWait wait = new WebDriverWait(driver,30);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/eg-root/eg-checkout-page/div/div[2]/eg-load-container/div/div/eg-checkout-steps/div[3]/button")));
-        driver.findElement(By.xpath("/html/body/eg-root/eg-checkout-page/div/div[2]/eg-load-container/div/div/eg-checkout-steps/div[3]/button")).click();
         WebElement contbottom = driver.findElement(By.xpath("/html/body/eg-root/eg-checkout-page/div/div[2]/eg-load-container/div/div/eg-checkout-steps/div[3]/button"));
         actions.moveToElement(contbottom).perform();
         contbottom.click();
+//        WebDriverWait wait = new WebDriverWait(driver,30);
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/eg-root/eg-checkout-page/div/div[2]/eg-load-container/div/div/eg-checkout-steps/div[3]/button")));
         System.out.println("Нажата кнопка Continue");
+        Thread.sleep(4000);
+
     }
 
     @When("Select type Foodcheck|Foodcheck")
@@ -178,6 +179,8 @@ public class OrderFoodcheck extends Driver {
 
     @When("Click on \" Complete order“|Foodcheck")
     public void click_on_Complete_order_Foodcheck() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,500)");
         driver.findElement(By.xpath("/html/body/eg-root/eg-checkout-page/div/div[2]/eg-load-container/div/div/eg-checkout-steps/div[3]/button[2]")).click();
         System.out.println("Переход на страницу благодарности");
     }

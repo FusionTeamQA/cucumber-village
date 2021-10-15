@@ -154,14 +154,17 @@ public class OrderGiroPay extends Driver {
 //        WebDriverWait wait = new WebDriverWait(driver,30);
 //        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/eg-root/eg-checkout-page/div/div[2]/eg-load-container/div/div/eg-checkout-steps/div[3]/button")));
         System.out.println("Нажата кнопка Continue");
+        Thread.sleep(4000);
     }
 
     @When("Select type GiroPay|GiroPay")
-    public void select_type_GiroPay_GiroPay() {
+    public void select_type_GiroPay_GiroPay() throws InterruptedException {
         Actions actions = new Actions(driver);
         WebElement radioSofort = driver.findElement(By.xpath("/html/body/eg-root/eg-checkout-page/div/div[2]/eg-load-container/div/div/eg-checkout-steps/div[2]/eg-checkout-payment/eg-load-container/div/form/div[1]/eg-checkout-payment-method[5]"));
         actions.moveToElement(radioSofort).perform();
         radioSofort.click();
+        Thread.sleep(3000);
+
     }
 
     @When("Check the box on \"I hereby accept Egourmery's Terms and conditions and Privacy policy“|GiroPay")

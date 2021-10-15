@@ -21,6 +21,12 @@ public class Driver {
     public static final String PASSWORD_admin = "12345678";
     public static final String user_log = "user";
     public static final String pass_log = "123";
+    public static final String test_card = "4111111111111111";
+    public static final String namescard = "Test Auto";
+    public static final String dataexpiration = "1222";
+
+
+
 }
 
 //    Date date = new Date();
