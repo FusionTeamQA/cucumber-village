@@ -1,4 +1,4 @@
-#@VillageTest
+@VillageTest
 Feature: Авторизация
   Scenario: Пройти успешную авторизацию
     Given Open browser|Login
