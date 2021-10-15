@@ -26,6 +26,8 @@ public class Driver {
     public static final String Postleitzahl = "01067";
     public static final String Ort = "Germany";
     public static final String Anmerkungen = "Test Comment";
+    public static final String Email = "testqa@test.com";
+
 
 
 
