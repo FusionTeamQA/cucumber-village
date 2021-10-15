@@ -16,14 +16,17 @@ public class Driver {
     Random random = new Random(); // добавление рандомных чисел
     int n = random.nextInt(1000) + 3; // +3 в конец
 
-    public static final String URL = "https://user:123@dev.brinc.de";
-    public static final String USER_admin = "qq@qq.qq";
-    public static final String PASSWORD_admin = "12345678";
-    public static final String user_log = "user";
-    public static final String pass_log = "123";
-    public static final String test_card = "4111111111111111";
-    public static final String namescard = "Test Auto";
-    public static final String dataexpiration = "1222";
+    public static final String URL = "https://stage.villageapp.de/login";
+    public static final String USER_admin = "oficial4connect@ya.com";
+    public static final String PASSWORD_admin = "qweqwe";
+    public static final String Einrichtung = "AutoTestQa";
+    public static final String Telefon = "1234567";
+    public static final String Webseite = "www.testQA.com";
+    public static final String Hausnummer = "Street 123";
+    public static final String Postleitzahl = "01067";
+    public static final String Ort = "Germany";
+    public static final String Anmerkungen = "Test Comment";
+
 
 
 
