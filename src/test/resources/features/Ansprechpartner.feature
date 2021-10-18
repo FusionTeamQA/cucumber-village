@@ -1,4 +1,4 @@
-@VillageTest
+#@VillageTest
 Feature: Заполнить форму Ansprechpartner
   Scenario: Авторизироваться, открыть вкладку Leben in Stage, заполнить форму Ansprechpartner
     Given Auth|Ansprechpartner
