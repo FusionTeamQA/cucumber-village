@@ -4,7 +4,7 @@ Feature: Заполнить форму Ansprechpartner
     Given Auth|Ansprechpartner
     And Open stage|Ansprechpartner
     And Open LebenStage|Ansprechpartner
-    When Click botton Übersicht|Ansprechpartner
+    When Click botton Ansprechpartner|Ansprechpartner
     And Enter Name|Ansprechpartner
     And Enter Beschreibung|Ansprechpartner
     And Enter Telefon|Ansprechpartner

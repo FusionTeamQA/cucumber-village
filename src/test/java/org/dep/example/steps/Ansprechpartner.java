@@ -62,9 +62,11 @@ public class Ansprechpartner extends Driver {
         System.out.println("Открыта страница Leben in Stage");
     }
 
-    @When("Click botton Übersicht|Ansprechpartner")
-    public void click_botton_Übersicht_Ansprechpartner() {
-        driver.findElement(By.xpath("//*[@id=\"main-container\"]/div/div[4]/a[1]/span")).click();
+    @When("Click botton Ansprechpartner|Ansprechpartner")
+    public void click_botton_Ansprechpartner_Ansprechpartner() {
+        WebDriverWait wait5 = new WebDriverWait(driver,30);
+        wait5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-container\"]/div/div[4]/a[2]/span")));
+        driver.findElement(By.xpath("//*[@id=\"main-container\"]/div/div[4]/a[2]/span")).click();
         driver.findElement(By.xpath("//*[@id=\"main-container\"]/div/div[2]/div[2]/button/span[1]")).click();
     }
 
@@ -123,7 +125,7 @@ public class Ansprechpartner extends Driver {
 
     @Then("Form send Successful|Ansprechpartner")
     public void form_send_Successful_Ansprechpartner() {
-        driver.findElement(By.xpath("//*[@id=\"create-club-form\"]/button/span[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"create-person-form\"]/button/span[1]")).click();
         WebDriverWait wait3 = new WebDriverWait(driver,30);
         wait3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-container\"]/div/div[2]/h4")));
         String loginString = driver.findElement(By.xpath("//*[@id=\"main-container\"]/div/div[2]/h4")).getText();

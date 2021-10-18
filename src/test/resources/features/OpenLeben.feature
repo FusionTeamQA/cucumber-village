@@ -1,4 +1,4 @@
-@VillageTest
+#@VillageTest
 Feature: Открыть вкладку Leben in Stage
   Scenario: Авторизироваться, открыть вкладку Leben in Stage
     Given Open browser|OpenLeben

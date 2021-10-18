@@ -1,20 +1,27 @@
 package org.dep.example.steps;
 
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class Driver {
 
     Random random = new Random(); // добавление рандомных чисел
     int n = random.nextInt(1000) + 3; // +3 в конец
+
 
     public static final String URL = "https://stage.villageapp.de/login";
     public static final String USER_admin = "oficial4connect@ya.com";
@@ -28,12 +35,5 @@ public class Driver {
     public static final String Anmerkungen = "Test Comment";
     public static final String Email = "testqa@test.com";
 
-
-
-
-
-}
-
-//    Date date = new Date();
-
+    }
 

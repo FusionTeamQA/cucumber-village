@@ -1,4 +1,4 @@
-@VillageTest
+#@VillageTest
 Feature: Заполнить форму Schadensmelder
   Scenario: Авторизироваться, открыть вкладку Leben in Stage, заполнить форму Schadensmelder
     Given Auth|SchadensmelderPositive
