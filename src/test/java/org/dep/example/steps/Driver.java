@@ -21,6 +21,8 @@ public class Driver {
 
     Random random = new Random(); // добавление рандомных чисел
     int n = random.nextInt(1000) + 3; // +3 в конец
+    WebDriver driver = null;
+    Date date = new Date();
 
 
     public static final String URL = "https://stage.villageapp.de/login";
@@ -34,6 +36,12 @@ public class Driver {
     public static final String Ort = "Germany";
     public static final String Anmerkungen = "Test Comment";
     public static final String Email = "testqa@test.com";
+    public static final String User_Connect2 = "user2connect@ya.com";
+
+
+    public void FlowForConnect() {
+
+    }
 
     }
 

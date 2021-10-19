@@ -1,4 +1,4 @@
-#@VillageTest
+@VillageTest
 Feature: Заполнить форму Apotheken и расшарить для всех
   Scenario: Авторизироваться, открыть вкладку Leben in Stage, заполнить форму
     Given Auth|Apotheken
