@@ -1,9 +1,10 @@
-package org.dep.example.steps;
+package org.dep.example.steps.LebenInVillage;
 
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.dep.example.steps.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -76,6 +77,7 @@ public class Connect2CheckÖffnungszeiten extends Driver {
         driver.findElement(By.xpath("//*[@id=\"create-organization-form\"]/div[2]/div[2]/div[3]/span/span[1]/input")).click();
         System.out.println("Понедельник выбран выходным + к СБ и ВС");
         driver.findElement(By.id("note")).sendKeys(Anmerkungen +n);
+        System.out.println("Создана запись:" + Einrichtung + n);
         driver.findElement(By.xpath("//*[@id=\"create-organization-form\"]/div[3]/div[5]/span")).click();
     }
 
@@ -129,12 +131,12 @@ public class Connect2CheckÖffnungszeiten extends Driver {
         wait4.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-container\"]/div/ul")));
         String loginString = driver.findElement(By.xpath("//*[@id=\"main-container\"]/div/ul")).getText();
         assertTrue(loginString.contains(Einrichtung +n));
+        System.out.println("Запись создана. Соответствует созданному названию");
         System.out.println("Открыта главная страница");
     }
 
     @Then("Close Browser|Öffnungszeitenconnect{int}")
     public void close_Browser_Öffnungszeitenconnect(Integer int1) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+        driver.close();
     }
 }

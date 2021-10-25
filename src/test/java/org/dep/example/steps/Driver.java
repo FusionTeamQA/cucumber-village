@@ -37,11 +37,9 @@ public class Driver {
     public static final String Anmerkungen = "Test Comment";
     public static final String Email = "testqa@test.com";
     public static final String User_Connect2 = "user2connect@ya.com";
+    public static final String TitleNews = "TestTitle";
+    public static final String Nachricht = "TestComments";
 
-
-    public void FlowForConnect() {
-
-    }
 
     }
 

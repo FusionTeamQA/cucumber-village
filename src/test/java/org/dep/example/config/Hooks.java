@@ -39,7 +39,7 @@ public class Hooks {
   @After()
   public void closeBrowser(Scenario scenario) {
     System.out.println("Браузер закрыт");
-    WebDriverManager.getWebDriver().close();
+//    WebDriverManager.getWebDriver().close();
   }
 
   private void takeScreenshot(Scenario scenario) {
