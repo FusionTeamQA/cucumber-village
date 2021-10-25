@@ -99,11 +99,11 @@ public class AddCommentNewPost extends Driver {
 
     @Then("Click button Posten|AddCommentNewPost")
     public void click_button_Posten_AddCommentNewPost() {
-//        driver.findElement(By.xpath("//*[@id=\"posts-container\"]/div[5]/div/div[3]/div[2]/div/div/div/div/div[2]/div[2]/button/span[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"posts-container\"]/div[5]/div/div[3]/div[2]/div/div/div/div/div[2]/div[2]/button/span[1]")).click();
     }
 
     @Then("Close Browser|AddCommentNewPost")
     public void close_Browser_AddCommentNewPost() {
-//        driver.close();
+        driver.close();
     }
 }

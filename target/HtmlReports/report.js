@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/News/AddCommentNewPost.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/News/CreateNewPost.feature");
 formatter.feature({
-  "name": "Создать новый пост и добавить комментарий|NewsCreatePost",
+  "name": "Создать новый пост|NewsCreatePost",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -11,7 +11,7 @@ formatter.feature({
 });
 formatter.scenario({
   "name": "Авторизироваться, открыть Главную страницу, заполнить форму создания поста, отправить",
-  "description": "    добавить комментарий, нажать отправить.",
+  "description": "",
   "keyword": "Scenario",
   "tags": [
     {
@@ -23,11 +23,11 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Auth|AddCommentNewPost",
+  "name": "Auth|NewsCreatePost",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "AddCommentNewPost.auth_AddCommentNewPost()"
+  "location": "NewsCreatePost.auth_NewsCreatePost()"
 });
 formatter.result({
   "status": "passed"
@@ -36,11 +36,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Open stage|AddCommentNewPost",
+  "name": "Open stage|NewsCreatePost",
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddCommentNewPost.open_stage_AddCommentNewPost()"
+  "location": "NewsCreatePost.open_stage_NewsCreatePost()"
 });
 formatter.result({
   "status": "passed"
@@ -49,11 +49,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click Neuer Beitrag|AddCommentNewPost",
+  "name": "Click Neuer Beitrag|NewsCreatePost",
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddCommentNewPost.click_Neuer_Beitrag_AddCommentNewPost()"
+  "location": "NewsCreatePost.click_Neuer_Beitrag_NewsCreatePost()"
 });
 formatter.result({
   "status": "passed"
@@ -62,11 +62,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Open form Neuer Beitrag|AddCommentNewPost",
+  "name": "Open form Neuer Beitrag|NewsCreatePost",
   "keyword": "When "
 });
 formatter.match({
-  "location": "AddCommentNewPost.open_form_Neuer_Beitrag_AddCommentNewPost()"
+  "location": "NewsCreatePost.open_form_Neuer_Beitrag_NewsCreatePost()"
 });
 formatter.result({
   "status": "passed"
@@ -75,11 +75,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Enter Titel der Nachricht|AddCommentNewPost",
+  "name": "Enter Titel der Nachricht|NewsCreatePost",
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddCommentNewPost.enter_Titel_der_Nachricht_AddCommentNewPost()"
+  "location": "NewsCreatePost.enter_Titel_der_Nachricht_NewsCreatePost()"
 });
 formatter.result({
   "status": "passed"
@@ -88,11 +88,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Enter Nachricht|AddCommentNewPost",
+  "name": "Enter Nachricht|NewsCreatePost",
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddCommentNewPost.enter_Nachricht_AddCommentNewPost()"
+  "location": "NewsCreatePost.enter_Nachricht_NewsCreatePost()"
 });
 formatter.result({
   "status": "passed"
@@ -101,11 +101,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click button Postens|AddCommentNewPost",
+  "name": "Click button Posten|NewsCreatePost",
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddCommentNewPost.click_button_Postens_AddCommentNewPost()"
+  "location": "NewsCreatePost.click_button_Posten_NewsCreatePost()"
 });
 formatter.result({
   "status": "passed"
@@ -114,11 +114,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Form send Successful|AddCommentNewPost",
+  "name": "Form send Successful|NewsCreatePost",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AddCommentNewPost.form_send_Successful_AddCommentNewPost()"
+  "location": "NewsCreatePost.form_send_Successful_NewsCreatePost()"
 });
 formatter.result({
   "status": "passed"
@@ -127,37 +127,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Add comment|AddCommentNewPost",
+  "name": "Close Browser|NewsCreatePost",
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddCommentNewPost.add_comment_AddCommentNewPost()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click button Posten|AddCommentNewPost",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AddCommentNewPost.click_button_Posten_AddCommentNewPost()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Close Browser|AddCommentNewPost",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AddCommentNewPost.close_Browser_AddCommentNewPost()"
+  "location": "NewsCreatePost.close_Browser_NewsCreatePost()"
 });
 formatter.result({
   "status": "passed"
