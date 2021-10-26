@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/News/CreateNewPost.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Gruppen/CreateGruppenPrivate.feature");
 formatter.feature({
-  "name": "Создать новый пост|NewsCreatePost",
+  "name": "Создать новую группу с типом Privat",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "Авторизироваться, открыть Главную страницу, заполнить форму создания поста, отправить",
+  "name": "Авторизироваться, Открыть вкладку Группы - создать новую группу с типом Privat",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -23,11 +23,11 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Auth|NewsCreatePost",
+  "name": "Auth|CreateGruppenPrivat",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "NewsCreatePost.auth_NewsCreatePost()"
+  "location": "CreateGruppenPrivat.auth_CreateGruppenPrivat()"
 });
 formatter.result({
   "status": "passed"
@@ -36,11 +36,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Open stage|NewsCreatePost",
+  "name": "Open page Gruppen|CreateGruppenPrivat",
   "keyword": "And "
 });
 formatter.match({
-  "location": "NewsCreatePost.open_stage_NewsCreatePost()"
+  "location": "CreateGruppenPrivat.open_page_Gruppen_CreateGruppenPrivat()"
 });
 formatter.result({
   "status": "passed"
@@ -49,24 +49,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click Neuer Beitrag|NewsCreatePost",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "NewsCreatePost.click_Neuer_Beitrag_NewsCreatePost()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Open form Neuer Beitrag|NewsCreatePost",
+  "name": "Click button Neue Gruppe erstellen|CreateGruppenPrivat",
   "keyword": "When "
 });
 formatter.match({
-  "location": "NewsCreatePost.open_form_Neuer_Beitrag_NewsCreatePost()"
+  "location": "CreateGruppenPrivat.click_button_Neue_Gruppe_erstellen_CreateGruppenPrivat()"
 });
 formatter.result({
   "status": "passed"
@@ -75,11 +62,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Enter Titel der Nachricht|NewsCreatePost",
+  "name": "Click botton Suche nach Titelbild z.B. Sommer|CreateGruppenPrivat",
   "keyword": "And "
 });
 formatter.match({
-  "location": "NewsCreatePost.enter_Titel_der_Nachricht_NewsCreatePost()"
+  "location": "CreateGruppenPrivat.click_botton_Suche_nach_Titelbild_z_B_Sommer_CreateGruppenPrivat()"
 });
 formatter.result({
   "status": "passed"
@@ -88,11 +75,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Enter Nachricht|NewsCreatePost",
+  "name": "Click random image|CreateGruppenPrivat",
   "keyword": "And "
 });
 formatter.match({
-  "location": "NewsCreatePost.enter_Nachricht_NewsCreatePost()"
+  "location": "CreateGruppenPrivat.click_random_image_CreateGruppenPrivat()"
 });
 formatter.result({
   "status": "passed"
@@ -101,11 +88,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click button Posten|NewsCreatePost",
+  "name": "Enter Gruppen name|CreateGruppenPrivat",
   "keyword": "And "
 });
 formatter.match({
-  "location": "NewsCreatePost.click_button_Posten_NewsCreatePost()"
+  "location": "CreateGruppenPrivat.enter_Gruppen_name_CreateGruppenPrivat()"
 });
 formatter.result({
   "status": "passed"
@@ -114,11 +101,50 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Form send Successful|NewsCreatePost",
+  "name": "Enter Beschreibung|CreateGruppenPrivat",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateGruppenPrivat.enter_Beschreibung_CreateGruppenPrivat()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Select type gruppen|CreateGruppenPrivat",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateGruppenPrivat.select_type_gruppen_CreateGruppenPrivat()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click button Fertig|CreateGruppenPrivat",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateGruppenPrivat.click_button_Fertig_CreateGruppenPrivat()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Gruppen succesfull create|CreateGruppenPrivat",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "NewsCreatePost.form_send_Successful_NewsCreatePost()"
+  "location": "CreateGruppenPrivat.gruppen_succesfull_create_CreateGruppenPrivat()"
 });
 formatter.result({
   "status": "passed"
@@ -127,11 +153,181 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "Close Browser|NewsCreatePost",
+  "name": "Close Browser|CreateGruppenPrivat",
   "keyword": "And "
 });
 formatter.match({
-  "location": "NewsCreatePost.close_Browser_NewsCreatePost()"
+  "location": "CreateGruppenPrivat.close_Browser_CreateGruppenPrivat()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/features/Gruppen/CreateGruppenÖffentlich.feature");
+formatter.feature({
+  "name": "Создать новую группу с типом Öffentlich",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@VillageTest"
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Авторизироваться, Открыть вкладку Группы - создать новую группу с типом Öffentlich",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@VillageTest"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Auth|CreateGruppenÖffentlich",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CreateGruppenÖffentlich.auth_CreateGruppenÖffentlich()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Open page Gruppen|CreateGruppenÖffentlich",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateGruppenÖffentlich.open_page_Gruppen_CreateGruppenÖffentlich()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click button Neue Gruppe erstellen|CreateGruppenÖffentlich",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CreateGruppenÖffentlich.click_button_Neue_Gruppe_erstellen_CreateGruppenÖffentlich()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click botton Suche nach Titelbild z.B. Sommer|CreateGruppenÖffentlich",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateGruppenÖffentlich.click_botton_Suche_nach_Titelbild_z_B_Sommer_CreateGruppenÖffentlich()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click random image|CreateGruppenÖffentlich",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateGruppenÖffentlich.click_random_image_CreateGruppenÖffentlich()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter Gruppen name|CreateGruppenÖffentlich",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateGruppenÖffentlich.enter_Gruppen_name_CreateGruppenÖffentlich()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter Beschreibung|CreateGruppenÖffentlich",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateGruppenÖffentlich.enter_Beschreibung_CreateGruppenÖffentlich()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Select type gruppen|CreateGruppenÖffentlich",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateGruppenÖffentlich.select_type_gruppen_CreateGruppenÖffentlich()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click button Fertig|CreateGruppenÖffentlich",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateGruppenÖffentlich.click_button_Fertig_CreateGruppenÖffentlich()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Gruppen succesfull create|CreateGruppenÖffentlich",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CreateGruppenÖffentlich.gruppen_succesfull_create_CreateGruppenÖffentlich()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Close Browser|CreateGruppenÖffentlich",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateGruppenÖffentlich.close_Browser_CreateGruppenÖffentlich()"
 });
 formatter.result({
   "status": "passed"
