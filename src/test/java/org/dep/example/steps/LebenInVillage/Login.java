@@ -42,7 +42,7 @@ public class Login extends Driver {
     }
 
     @When("Enter login|Login")
-    public void enter_login_Login() {
+    public void enter_login_Login() throws InterruptedException {
         driver.findElement(By.name("email")).sendKeys(USER_admin);
         System.out.println("Введен логин");
     }

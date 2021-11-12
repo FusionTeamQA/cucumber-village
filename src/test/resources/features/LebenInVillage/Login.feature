@@ -1,3 +1,4 @@
+@test
 #@VillageTest
 Feature: Авторизация
   Scenario: Пройти успешную авторизацию

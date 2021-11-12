@@ -27,6 +27,7 @@ public class Driver {
 
     public static final String URL = "https://stage.villageapp.de/login";
     public static final String URL_Gruppen = "https://stage.villageapp.de/gruppen";
+    public static final String URL_Events = "https://stage.villageapp.de/events";
 
     public static final String USER_admin = "oficial4connect@ya.com";
     public static final String PASSWORD_admin = "qweqwe";

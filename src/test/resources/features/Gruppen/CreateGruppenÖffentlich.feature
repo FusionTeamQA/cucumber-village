@@ -1,4 +1,4 @@
-@VillageTest
+#@VillageTest
 Feature: Создать новую группу с типом Öffentlich
   Scenario: Авторизироваться, Открыть вкладку Группы - создать новую группу с типом Öffentlich
     Given Auth|CreateGruppenÖffentlich

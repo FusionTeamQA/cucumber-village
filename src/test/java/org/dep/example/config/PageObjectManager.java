@@ -3,7 +3,7 @@ package org.dep.example.config;
 import org.dep.example.pages.GoogleResultPage;
 import org.dep.example.pages.GoogleSearchPage;
 
-public class PageObjectManager {
+public class  PageObjectManager {
 
   private static GoogleSearchPage googleSearchPage;
   private static GoogleResultPage googleResultPage;

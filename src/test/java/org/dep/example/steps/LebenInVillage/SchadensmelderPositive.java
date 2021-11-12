@@ -101,6 +101,7 @@ public class SchadensmelderPositive extends Driver {
     @When("Enter Beschreibung des Schadens|SchadensmelderPositive")
     public void enter_Beschreibung_des_Schadens_SchadensmelderPositive() {
         driver.findElement(By.id("description")).sendKeys(Anmerkungen +n);
+        driver.findElement(By.id("upload-input")).sendKeys("/Users/fusion_tech/Documents/testImg/test-img.jpeg");
     }
 
     @When("Click radiobotton Hiermit bestätigen Sie die|SchadensmelderPositive")
