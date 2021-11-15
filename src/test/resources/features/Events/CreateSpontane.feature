@@ -1,5 +1,5 @@
 #@test
-#@VillageTest
+@VillageTest
 Feature: Создать новый эвент - Spontanes
   Scenario: Авторизироваться, Открыть вкладку Эвенты - создать новый эвент с типом Spontane
     Given Auth|CreateSpontane

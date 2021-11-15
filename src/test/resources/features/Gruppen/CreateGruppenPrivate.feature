@@ -1,5 +1,5 @@
 #@test
-#@VillageTest
+@VillageTest
 Feature: Создать новую группу с типом Privat
   Scenario: Авторизироваться, Открыть вкладку Группы - создать новую группу с типом Privat
     Given Auth|CreateGruppenPrivat

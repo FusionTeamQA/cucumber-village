@@ -1,4 +1,4 @@
-#@VillageTest
+@VillageTest
 Feature: Создать новый пост|NewsCreatePost
   Scenario: Авторизироваться, открыть Главную страницу, заполнить форму создания поста, отправить
     Given Auth|NewsCreatePost

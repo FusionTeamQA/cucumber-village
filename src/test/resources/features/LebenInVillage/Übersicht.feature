@@ -1,4 +1,4 @@
-#@VillageTest
+@VillageTest
 Feature: Заполнить форму Übersicht der Vereine
   Scenario: Авторизироваться, открыть вкладку Leben in Stage, заполнить форму Übersicht der Vereine
     Given Auth|Übersicht

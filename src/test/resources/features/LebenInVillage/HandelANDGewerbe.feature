@@ -1,4 +1,4 @@
-#@VillageTest
+@VillageTest
 Feature: Заполнить форму Handel & Gewerbe
   Scenario: Авторизироваться, открыть вкладку Leben in Stage, заполнить форму Handel & Gewerbe
     Given Auth|Handel
